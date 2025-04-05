@@ -1,4 +1,6 @@
 FROM oven/bun:canary AS base
+RUN apt update && apt install -y unzip
+RUN bun upgrade --canary
 
 FROM base AS builder
 
