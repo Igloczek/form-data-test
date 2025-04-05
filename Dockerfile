@@ -1,4 +1,4 @@
-FROM oven/bun:1.2.8 AS base
+FROM oven/bun:canary AS base
 
 FROM base AS builder
 
